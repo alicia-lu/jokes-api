@@ -10,7 +10,6 @@ const apiUrl = 'https://official-joke-api.appspot.com/jokes/random'
 
 class Jokes extends React.Component {
   state = {
-    id: '',
     type: '',
     setup: '',
     punchline: ''
@@ -26,9 +25,12 @@ class Jokes extends React.Component {
           type,
           setup,
           punchline,
-          jokeRead: true
         })
       })
+  }
+
+  refreshPage() {
+   window.location.reload(false);
   }
 
   
@@ -43,8 +45,7 @@ class Jokes extends React.Component {
 
         {/* TODO: SHOW punchline link */}
 
-        {/* TODO: refresh button */}
-        <button onClick={this.newJoke}>Refresh</button>
+        <button onClick={this.refreshPage}>Refresh</button>
       </>
     )
   }
