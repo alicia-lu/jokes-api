@@ -1,4 +1,9 @@
+body {
+  margin: 0;
+  background-color: rgba(124, 8, 8, 0.664);
+}
 .container {
-  background-color: antiquewhite;
- text-align: center;
+  text-align: center;
+  color: white;
+  font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

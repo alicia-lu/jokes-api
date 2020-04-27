@@ -52,7 +52,7 @@ class Jokes extends React.Component {
     return(
       <div className="joke container">
         <h1>Joke Time!</h1>
-        <p>[type: {this.state.type}]</p>
+        {/* <p>[type: {this.state.type}]</p> */}
         <button onClick={this.refreshPage}>New Joke</button>
         <h4>{this.state.setup}</h4>
 
